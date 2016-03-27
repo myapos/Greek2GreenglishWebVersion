@@ -21,14 +21,7 @@ var Prompt = React.createClass({
      this.setState({inputtextvalue: event.target.value,
      					  outputtextvalue: out});
      //this.followinput();
-   },
-   followinput: function() {
-    //alert('hello from folow in');
-    var out;
-    out = GetInput(this.state.inputtextvalue);
-    this.setState({outputtextvalue: out});
-    
-   },  
+   }, 
    handleClick: function(event) {
     var out;
     out = GetInput(this.state.inputtextvalue);
