@@ -8,8 +8,11 @@ var Convert = React.createClass({
             alert: false 
         };
     },
-    _alert: function(){
+    componentDidMount: function(){
         this.setState({alert: true});
+    },
+     contextTypes: {
+        bar: React.PropTypes.string.isRequired
     },
     render: function() {
         var rsaOptions = {
@@ -24,7 +27,7 @@ var Convert = React.createClass({
             }
         };
         return (
-            <div>
+            <div> My name is: {this.context.bar}
                 <ReactSimpleAlert options={rsaOptions} />
             </div>
         );

@@ -15,7 +15,7 @@ var routes = (
     <Route path='/' component={Main}>
       <IndexRoute component={Home} />
       <Route path='greek2greenglishapp' component={PromptContainer}/>
-	<Route path='convert' component={Convert}/>
+      <Route path='convert:test' component={Convert}/>
     </Route>
   </Router>
 );
