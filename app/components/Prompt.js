@@ -16,8 +16,12 @@ var Prompt = React.createClass({
         };
     },
    handleChange: function(event) {
-     this.setState({inputtextvalue: event.target.value});
-   },  
+     var out;
+     out = GetInput(event.target.value);
+     this.setState({inputtextvalue: event.target.value,
+     					  outputtextvalue: out});
+     //this.followinput();
+   }, 
    handleClick: function(event) {
     var out;
     out = GetInput(this.state.inputtextvalue);
@@ -30,21 +34,14 @@ var Prompt = React.createClass({
       <div className="jumbotron col-sm-12 text-center" style={transparentBg}> 
      
 		<h3>Please enter input text to get output</h3>
-		<div className="form-group col-sm-5">
+		<div className="form-group col-sm-6">
   			<label>Input in greek:</label>
   			<textarea className="form-control" rows="5" value={this.state.inputtextvalue}
 			          onChange={this.handleChange}>
 			</textarea>
 		</div>
-		<div className="col-sm-2" > 
-			      <button
-             			className="btn btn-block btn-success"
-              			type="submit"
-              			onClick={this.handleClick} >
-                		Convert
-               </button>
-		</div>
-			<div className="form-group col-sm-5">
+
+			<div className="form-group col-sm-6">
   				<label>Output in greenglish:</label>
   				<textarea className="form-control" rows="5" value={this.state.outputtextvalue}
 			             onChange={this.handleChange}>
@@ -72,7 +69,7 @@ for (i = 0; i < myinput.length; i++) {
 
 }
 
-  alert("Conversion done. Check output textarea!");
+  //alert("Conversion done. Check output textarea!");
   return outputstring;
 }
 
