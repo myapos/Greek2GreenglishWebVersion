@@ -1,0 +1,23 @@
+var React = require('react');
+
+var Prompt = require('../components/Prompt');
+
+
+var PromptContainer = React.createClass({
+
+ render: function () {
+ 
+    return (
+      <Prompt
+        /*onSubmitUser={this.handleSubmitUser}
+        onUpdateUser={this.handleUpdateUser}
+        header={this.props.route.header}
+        username={this.state.username}*/ />
+    )
+  }
+});
+
+
+
+
+module.exports = PromptContainer;
