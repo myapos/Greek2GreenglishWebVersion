@@ -5,13 +5,18 @@ var Convert = React.createClass({
 
     getInitialState: function() {
         return {
-            alert: false 
+            alert: false,
+            inputtext:'' 
         };
     },
     componentDidMount: function(){
-        this.setState({alert: true});
+        this.setState({
+        	alert: true,
+         inputtext:this.props.params.inputtext
+        });
     },
     render: function() {
+    	console.log(this);
         var rsaOptions = {
             title: "Alert title",
             message: "This is an alert!",
@@ -23,6 +28,7 @@ var Convert = React.createClass({
                 }
             }
         };
+	        
         return (
             <div>
                 <ReactSimpleAlert options={rsaOptions} />
