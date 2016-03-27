@@ -6,7 +6,8 @@ var Convert = React.createClass({
     getInitialState: function() {
         return {
             alert: false,
-            inputtext:'' 
+            inputtext:'',
+            outputtext:'' 
         };
     },
     componentDidMount: function(){
@@ -16,7 +17,7 @@ var Convert = React.createClass({
         });
     },
     render: function() {
-    	//console.log(this);
+    	console.log(this);
         var rsaOptions = {
             title: "Alert title",
             message: "This is an alert!",
@@ -32,7 +33,7 @@ var Convert = React.createClass({
         return (
             <div>
                 <ReactSimpleAlert options={rsaOptions} />
-                <GetInput text={this.state.inputtext}/>
+                var t = <GetInput text={this.state.inputtext}/>
             </div>
         );
     }
@@ -48,35 +49,32 @@ function GetInput (props) {
 	
 //console.log(props);	
 
-var test1=2;
-var test2=2;
+
 var myinput = props.text;
 var outputstring="";
 var i=0;
 for (i = 0; i < myinput.length; i++) { 
-    //text += cars[i] + "<br>";
+
     outputstring=outputstring+String.fromCharCode(Map(myinput.charCodeAt(i)));
-    //alert(myinput.charAt(i));
-    //outputstring=outputstring+Map();
+
 }
 
 //alert("outputstring: "+outputstring);
 //alert(props.text);
 
-/*
-if(myinput=="Hello from input text!"){
-alert("equal strings");
-}
-*/	
   return (
+  <div>
     <div>You gave input: {props.text}</div>
+    <div> Output: {outputstring} </div>
+   </div>
+    
   )
 }
 
 function Map(charvalue){
 //c = "s";
 //alert("current char:"+c);
-console.log(charvalue);
+//console.log(charvalue);
 
 if (charvalue == 945) {
 charvalue = 97;
