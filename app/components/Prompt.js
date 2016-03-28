@@ -2,6 +2,7 @@ var React = require('react');
 var transparentBg = require('../styles').transparentBg;
 var ReactRouter = require('react-router');
 var Link = ReactRouter.Link;
+var Signature = require('../components/Signature');
 
 
 
@@ -29,7 +30,7 @@ var Prompt = React.createClass({
    	console.log(this);
     return (
     
-      <div className="jumbotron col-sm-12 text-center" style={transparentBg}> 
+   <div className="jumbotron col-sm-12 text-center" style={transparentBg}> 
      
 		<h3>Please enter input text to get output</h3>
 		<div className="form-group col-sm-6">
@@ -45,7 +46,7 @@ var Prompt = React.createClass({
 			             onChange={this.handleChange}>
 			   </textarea>
 			</div>
-
+			<Signature/>
 	</div>
     )
   }
