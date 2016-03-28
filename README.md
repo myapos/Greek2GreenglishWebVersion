@@ -22,7 +22,7 @@ No installation has to be done. This application runs through the browser. The a
 Development Tools - Other useful information
 ================
 
-This web application was developed with Javascript, HTML5, React JS and Bootstrap framework. Finally i used BlueFish editor in order to write
+This web application was developed with Javascript, HTML5, React JS and Bootstrap framework. also Node.js and WebPack were used during development. Finally i used BlueFish editor in order to write
 this web application.
 
 
