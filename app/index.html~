@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Greek2GreenglishwebVersion</title>
+  <title>Greek2GreenglishWebVersion</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 </head>
-<body>
+<body style="background-color:#a8a65d">
   <div id="app"></div>
+  
 </body>
 </html>

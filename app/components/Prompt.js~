@@ -30,23 +30,27 @@ var Prompt = React.createClass({
    	console.log(this);
     return (
     
-   <div className="jumbotron col-sm-12 text-center" style={transparentBg}> 
+   <div className="text-center"> 
      
 		<h3>Please enter input text to get output</h3>
-		<div className="form-group col-sm-6">
+		<div className="row">
+		<div className="col-sm-1"> </div>
+		<div className="form-group col-sm-5">
   			<label>Input in greek:</label>
   			<textarea className="form-control" rows="5" value={this.state.inputtextvalue}
 			          onChange={this.handleChange}>
 			</textarea>
 		</div>
 
-			<div className="form-group col-sm-6">
+			<div className="form-group col-sm-5">
   				<label>Output in greenglish:</label>
   				<textarea className="form-control" rows="5" value={this.state.outputtextvalue}
 			             onChange={this.handleChange}>
 			   </textarea>
+			   <Signature/>
 			</div>
-
+			</div> {/* End of row*/}
+			
 	</div>
     )
   }
