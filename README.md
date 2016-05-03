@@ -12,7 +12,7 @@ Just type in the input text area the greek text and in the output the greenglish
 Screenshots
 ================
 
-Dummy text
+Dummy text. Test test
 
 Notes
 ================ 
