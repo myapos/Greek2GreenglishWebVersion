@@ -2,7 +2,7 @@ var React = require('react');
 var ReactRouter = require('react-router');
 var Link = ReactRouter.Link;
 var transparentBg = require('../styles').transparentBg;
-var boxStyle = require('../styles').example;
+var boxStyle = require('../styles').box;
 var Signature = require('../components/Signature');
 
 

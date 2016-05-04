@@ -18,7 +18,8 @@ var Home = React.createClass({
       		developed with ReactJS framework. The purpose of this implementation is the experimentation of ReactJS framework 
       		in 				  order to learn how to use it. A similar implementation of this 
       		program exists as a standalone Java application. You 				  
-      		can visit it in the following  <a href="https://github.com/myapos/Greek2Greenglish"> url </a> .
+      		can visit it in the following  <a href="https://github.com/myapos/Greek2Greenglish"> url </a> . The source code of this 
+      		application is available in the following <a href="https://github.com/myapos/Greek2GreenglishWebVersion"> Github </a> reposository.
       	</p>
       	<Link to='/greek2greenglishapp'>
        	 <button type='button' className='btn btn-lg btn-success'>Get Started</button>
