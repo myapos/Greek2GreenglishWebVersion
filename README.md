@@ -13,9 +13,9 @@ Just type in the input text area the greek text and in the output the greenglish
 Screenshots
 ================
 
-![screenshot1.png](https://github.com/myapos/Greek2Greenglish/blob/master/screenshots/screenshot1.png)
+![screenshot1.png](https://github.com/myapos/Greek2GreenglishWebVersion/blob/master/screenshots/screenshot1.png)
 
-![screenshot2.png](https://github.com/myapos/Greek2Greenglish/blob/master/screenshots/screenshot2.png)
+![screenshot2.png](https://github.com/myapos/Greek2GreenglishWebVersion/blob/master/screenshots/screenshot2.png)
 
 Notes
 ================ 
